@@ -1,0 +1,42 @@
+/* Tab1.css */
+.tab1-content {
+  --background: #f5f5f5;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+.logo-image {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+}
+.message-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.message-card {
+  width: 400px;
+  max-width: 90%;
+  margin: 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #4a98ff; /* Azul Suave */
+}
+.card-title, .message-text {
+  color: white;
+  font-size: 1rem;
+  margin: 8px 0;
+  font-weight: 500;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.message-card:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}

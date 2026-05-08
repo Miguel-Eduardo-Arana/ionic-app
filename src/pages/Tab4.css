@@ -1,0 +1,51 @@
+/* Tab4.css - Estilo fondo naranja con texto blanco para Acerca de */
+.tab4-content {
+  --background: #f5f5f5;
+}
+
+.logo-uneti-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.logo-uneti {
+  width: 200px;
+  max-width: 90%;
+  height: auto;
+}
+
+.about-card {
+  width:600px;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #4a98ff; /* Azul Suave */
+}
+
+/* Forzar todo el texto dentro de la tarjeta a color blanco */
+.about-card,
+.about-card *,
+.about-card .ion-card-header,
+.about-card .ion-card-content,
+.about-card p,
+.about-card span,
+.about-card div,
+.about-card ion-card-title {
+  color: white !important;
+}
+
+/* Mmostrar el título con un poco más de énfasis */
+.about-card ion-card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.about-card p {
+  border-bottom: 1px solid #4a98ff; /* Azul Suave */
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.about-card p:last-child {
+  border-bottom: none;
+}

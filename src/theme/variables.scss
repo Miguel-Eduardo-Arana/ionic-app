@@ -1,0 +1,71 @@
+// For information on how to create your own theme, please refer to:
+// https://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: #00247D;
+  --ion-color-primary-rgb: 0, 36, 125;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #001f6b;
+  --ion-color-primary-tint: #1a3a8a;
+
+  /** secondary **/
+  --ion-color-secondary: #CF0A2C;
+  --ion-color-secondary-rgb: 207, 10, 44;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #b60926;
+  --ion-color-secondary-tint: #d4233e;
+
+  /** tertiary **/
+  --ion-color-tertiary: #FFCC00;
+  --ion-color-tertiary-rgb: 255, 204, 0;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #e0b400;
+  --ion-color-tertiary-tint: #ffd11a;
+
+  /** background gradient **/
+  --app-bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  --ion-background-color: #0f172a;
+  --ion-text-color: #f8fafc;
+  --ion-item-background: transparent;
+  --ion-card-background: var(--glass-bg);
+}
+
+.ios body, .md body {
+  background: var(--app-bg-gradient);
+  color: var(--ion-text-color);
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Clases Utilitarias UI Premium */
+.glass-card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #FFCC00, #00247D, #CF0A2C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+}

@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-menu-button></ion-menu-button></ion-buttons>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="tab1-content">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <div class="message-container">
+      <ion-card class="glass-card message-card">
+        <ion-card-header class="ion-text-center">
+          <ion-card-title class="gradient-text card-title">SoporTechVzla</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <p class="message-text">Bienvenidos a Nuestro Site</p>
+          <p class="message-text highlight">Soporte Técnico Especializado</p>
+          <div class="badge-container">
+            <ion-badge color="success" class="custom-badge">Atención 24x7</ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel-viewport">
+        <img
+          *ngFor="let img of images; let i = index"
+          [src]="img"
+          [class.active]="i === currentIndex"
+          alt="Imagen servicio"
+          class="carousel-image"
+        />
+      </div>
+
+      <button class="carousel-btn prev-btn" (click)="prev()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+      <button class="carousel-btn next-btn" (click)="next()">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+      <div class="carousel-dots">
+        <span
+          *ngFor="let img of images; let i = index"
+          class="dot"
+          [class.active]="i === currentIndex"
+          (click)="goTo(i)"
+        ></span>
+      </div>
+    </div>
+  </div>
+</ion-content>

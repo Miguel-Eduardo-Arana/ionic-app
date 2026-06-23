@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.logo-uneti-container {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.logo-uneti {
+  max-width: 140px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.about-card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+.dev-name {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.dev-ci {
+  color: #FFCC00;
+  font-weight: bold;
+}
+
+.transparent-list {
+  background: transparent;
+}
+
+.transparent-list ion-item {
+  --background: transparent;
+  --color: #e2e8f0;
+  font-size: 0.85rem;
+  min-height: 36px;
+}
+
+.transparent-list ion-icon {
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
